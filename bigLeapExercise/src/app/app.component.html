@@ -8,7 +8,23 @@
       <h1>Hello, {{ title }}</h1>
       <p>Ready to onBoard! 🎉</p>
     </div>
-    <!-- <div class="divider" role="separator" aria-label="Divider"></div> -->
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div>
+      <div class="row">
+        <div> <label>
+            UserName
+          </label>
+        </div>
+        <input type="text" class="form-class" placeholder="Enter User Name">
+      </div>
+      <div class="row">
+        <label>Password</label>
+        <div>
+          <input type="text" class="form-class" placeholder="Enter Password">
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="login($event)">Login</button>
+    </div>
   </div>
 </main>
 
